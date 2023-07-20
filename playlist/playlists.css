@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-align: center;
+    color: #00243a;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #00243a;
+    color: #007395;
+    z-index: 2;
+    flex-shrink: 0;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+    background-color: #00243a;
+  }
+  
+  nav .logo a {
+    font-size: 26px;
+    color: #007395;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  nav .logo a:hover {
+    color: #00f6ff;
+    transition: 0.5s;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+  
+  nav ul li {
+    list-style: none;
+  }
+  
+  nav ul li a {
+    color: #00adcc;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  nav ul li a:hover {
+    color: #00f6ff;
+    transition: 0.5s;
+  }
+  
+  
+  #playlist {
+    display: none;
+}  

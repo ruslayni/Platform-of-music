@@ -1,0 +1,121 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* Заголовок */
+h1,h2,h3,h4,h5,h6 {
+  text-align: center;
+  color: darkorange;
+  z-index: 2;
+
+ 
+}
+body{
+  font-family: 'Oswald', sans-serif;
+}
+
+#footer {
+
+  text-align: center;
+  padding: 10px;
+  background-color: lavenderblush;
+  color: black;
+  z-index: 3;
+  font-weight: 800;
+}
+
+/* Навігація */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 60px;
+  background-color: darkorange;
+  font-weight: 400;
+}
+
+
+
+
+
+
+nav .logo a {
+  font-size: 26px;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  font-family: 'Pacifico', cursive;
+}
+nav .logo a:hover {
+  color: black;
+  transition: 1s;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+nav ul li a:hover {
+  color: black;
+  transition: 1s;
+}
+#artists {
+  display: flex;
+  flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
+  justify-content: space-between; /* Равномерно распределяем элементы по ширине контейнера */
+  align-items: flex-start; /* Выравниваем элементы по верхнему краю контейнера */
+  gap: 10px; /* Расстояние между элементами */
+  max-width: 800px; /* Максимальная ширина контейнера с исполнителями */
+  margin: 0 auto; /* Центрируем контейнер на странице */
+}
+
+.artist {
+  flex: 0 0 calc(33.33% - 20px); /* Максимальная ширина элемента - 33.33% минус промежутки */
+  padding: 10px; /* Отступы вокруг элемента */
+  background-color: #f2f2f2; /* Цвет фона для стилизации */
+  border-radius: 5px; /* Закругляем углы элемента */
+}
+
+.artist img {
+  max-width: 100%; /* Максимальная ширина изображения внутри блока .artist */
+  border-radius: 5px; /* Закругляем углы изображения */
+}
+
+
+
+  /* Анімація з'явлення блоку виконавця */
+  .artist {
+    animation: fade-in 0.5s ease-in-out;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+    

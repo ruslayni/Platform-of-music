@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Плейлисти</title>
+    <link rel="stylesheet" href="css/playlists.css">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+
+    </header>
+    <!-- навігація -->
+    <nav>
+        <div class="logo">
+          <a href="index.html">Musix</a>
+        </div>
+        <!-- навігація -->
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="playlists.html">Плейлисти</a></li>
+          <li><a href="Albums.html">Альбоми</a></li>
+          <li><a href="singers.html">Виконавці</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div style="display: flex;" class="playlists">
+          <div style="flex: 1;"><!-- перший плейлист -->
+              <h1 style="text-align: left; margin-top: 0;">Новітній</h1>
+              <img id="image" src="images/lil-uzi-vert-pink-tape.jpg" alt="Зображення" onclick="togglePlaylist('playlist')">
+              <ul id="playlist" style="display: none;">
+                <li class="playlist-item active">
+                  
+                  <div class="track-info">
+                    <img src="images/lil-uzi-vert-pink-tape.jpg"  alt="Зображення треку">
+                    <p>Pluto To Mars</p>
+                    
+                  </div>
+                  <button class="play-button" onclick="toggleAudio(this)">
+                    Play
+                  </button>
+                  <audio src="music/Lil Uzi Vert Pluto To Mars.mp3"  ></audio>
+                </li>
+                <li class="playlist-item active">
+                   
+                    <div class="track-info">
+                      <img src="images/attention.jpg" alt="Зображення треку">
+                      <p>Attention</p>
+                    </div>
+                    <button class="play-button" onclick="toggleAudio(this)">
+                      Play
+                    </button>
+                    <audio src="music/xxxtentacion_-_attention.mp3" ></audio>
+                  </li>
+                <li class="playlist-item active">
+                  
+                  <div class="track-info">
+                    <img src="images/lil-uzi-vert-pink-tape.jpg" alt="Зображення треку">
+                    <p>Aye</p>
+                  </div>
+                  <button class="play-button" onclick="toggleAudio(this)">
+                    Play
+                  </button>
+                  <audio src="music/Lil_Uzi_Vert-Aye.mp3" ></audio>
+                </li>
+                <li class="playlist-item active">
+                  
+                  <div class="track-info">
+                    <img src="images/lil-uzi-vert-pink-tape.jpg" alt="Зображення треку">
+                    <p>The End</p>
+                  </div>
+                  <button class="play-button" onclick="toggleAudio(this)">
+                    Play
+                  </button>
+                  <audio src="music/Lil_Uzi_Vert_feat.Babymetal_The_End.mp3" ></audio>
+                </li>
+              </ul>
+            </div>
+              <div style="flex: 1;">
+                <!-- Другий плейлист -->
+                <h1 style="text-align: left; margin-top: 0;">Найпопулярніший</h1>
+                <img id="image2" src="images/SeregaPirat.jpg" alt="Зображення" width="300px" onclick="togglePlaylist('playlist2')">
+                <ul id="playlist2" style="display: none;">
+                    <li class="playlist-item active">
+                        
+                        <div class="track-info">
+                            <img src="images/attention.jpg" alt="Зображення треку">
+                            <p>Attention</p>
+                        </div>
+                        <button class="play-button" onclick="toggleAudio(this)">
+                          Play
+                        </button>
+                        <audio src="music/xxxtentacion_-_attention.mp3" control></audio>
+                    </li>
+                    <li class="playlist-item active">
+                      
+                        <div class="track-info">
+                            <img src="images/blackwhite.jpg" alt="Зображення треку">
+                            <p>Blackwhite</p>
+                        </div>
+                        <button class="play-button" onclick="toggleAudio(this)">
+                          Play
+                        </button>
+                        <audio src="music/juice-wrld-black-white.mp3" ></audio>
+                    </li>
+                    <li class="playlist-item active">
+                      
+                        <div class="track-info">
+                            <img src="images/lil-uzi-vert-pink-tape.jpg" alt="Зображення треку">
+                            <p>The End</p>
+                        </div>
+                        <button class="play-button" onclick="toggleAudio(this)">
+                          Play
+                        </button>
+                        <audio src="music/Lil_Uzi_Vert_feat.Babymetal_The_End.mp3" ></audio>
+                    </li>
+                    <li class="playlist-item active">
+                        
+                        <div class="track-info">
+                            <img src="images/ynwmelly.png" alt="Зображення треку">
+                            <p>Mixed Personalities</p>
+                        </div>
+                        <button class="play-button" onclick="toggleAudio(this)">
+                          Play
+                        </button>
+                        <audio src="music/YNW_Melly_Kanye_West_-_Mixed_Personalities_(musmore.com).mp3" ></audio>
+                    </li>
+                    <li class="playlist-item active">
+                        
+                        <div class="track-info">
+                            <img src="images/walkin.png" alt="Зображення треку">
+                            <p>Walkin</p>
+                        </div>
+                        <button class="play-button" onclick="toggleAudio(this)">
+                          Play
+                        </button>
+                        <audio src="music/denzel-curry_-_walkin.mp3" ></audio>
+                    </li>
+                    <li class="playlist-item active">
+                        
+                        <div class="track-info">
+                            <img src="images/wasted.png" alt="Зображення треку">
+                            <p>Wasted</p>
+                        </div>
+                        <button class="play-button" onclick="toggleAudio(this)">
+                          Play
+                        </button>
+                        <audio src="music/Juice WRLD feat. Lil Uzi Vert-Wasted.mp3" ></audio>
+                    </li>
+                    <li class="playlist-item active">
+                        
+                        <div class="track-info">
+                            <img src="images/darkknightdummo.png" alt="Зображення треку">
+                            <p>Dark Knight Dummo</p>
+                        </div>
+                        <button class="play-button" onclick="toggleAudio(this)">
+                          Play
+                        </button>
+                        <audio src="music/Trippie Redd feat. Travis Scott-Dark Knight Dummo.mp3" ></audio>
+                    </li>
+                    <li class="playlist-item active">
+                        
+                        <div class="track-info">
+                            <img src="images/twinz.jpg" alt="Зображення треку">
+                            <p>Big Pun</p>
+                        </div>
+                        <button class="play-button" onclick="toggleAudio(this)">
+                          Play
+                        </button>
+                        <audio src="music/Big Pun feat. Fat Joe-Twinz (Deep Cover 98).mp3" ></audio>
+                    </li>
+                    <li class="playlist-item active">
+                        
+                        <div class="track-info">
+                            <img src="images/onemiconegun.png" alt="Зображення треку">
+                            <p>One Gun</p>
+                        </div>
+                        <button class="play-button" onclick="toggleAudio(this)">
+                          Play
+                        </button>
+                        <audio src="music/Nas _amp_ 21 Savage-One Mic, One Gun.mp3" ></audio>
+                    </li>
+                    <li class="playlist-item active">
+                        
+                        <div class="track-info">
+                            <img src="images/SeregaPirat.jpg" alt="Зображення треку">
+                            <p>SeregaPirat</p>
+                        </div>
+                        <button class="play-button" onclick="toggleAudio(this)">
+                          Play
+                        </button>
+                        <audio src="music/serga.mp3" ></audio>
+                    </li>
+                </ul>
+            </div>
+            
+            <div style="flex: 1;">
+              <!-- Третій плейлист -->
+              <h1 style="text-align: left; margin-top: 0;">Rock</h1>
+              <img id="image3" src="images/mockingbird.jpg" alt="Зображення" onclick="togglePlaylist('playlist3')">
+              <ul id="playlist3" style="display: none;">
+                <li class="playlist-item active">
+                  
+                  <div class="track-info">
+                    <img src="images/god.png" alt="Зображення треку">
+                    <p>Brooklyn</p>
+                  </div>
+                  <button class="play-button" onclick="toggleAudio(this)">
+                    Play
+                  </button>
+                  <audio src="music/Kendrick Lamar-GOD..mp3"  ></audio>
+                </li>
+                <li class="playlist-item active">
+                  
+                  <div class="track-info">
+                    <img src="images/umad.jpg" alt="Зображення треку">
+                    <p>umad!</p>
+                  </div>
+                  <button class="play-button" onclick="toggleAudio(this)">
+                    Play
+                  </button>
+                  <audio src="music/bbno$-u mad!.mp3" ></audio>
+                </li>
+                <li class="playlist-item active">
+                  
+                  <div class="track-info">
+                    <img src="images/lil-uzi-vert-ap-2.webp" alt="Зображення треку">
+                    <p>Up</p>
+                  </div>
+                  <button class="play-button" onclick="toggleAudio(this)">
+                    Play
+                  </button>
+                  <audio src="music/Lil Uzi Vert Pluto To Mars.mp3" ></audio>
+                </li>
+                <li class="playlist-item active">
+                  
+                  <div class="track-info">
+                    <img src="images/mockingbird.jpg" alt="Зображення треку">
+                    <p>Mockingbird</p>
+                  </div>
+                  <button class="play-button" onclick="toggleAudio(this)">
+                    Play
+                  </button>
+                  <audio src="music/eminem_-_mockingbird.mp3" ></audio>
+                </li>
+                <li class="playlist-item active">
+                  
+                  <div class="track-info">
+                    <img src="images/OutWest.png" alt="Зображення треку">
+                    <p>Out West</p>
+                  </div>
+                  <button class="play-button" onclick="toggleAudio(this)">
+                    Play
+                  </button>
+                  <audio src="music/jackboys-travis-scott-feat-young-thug_-_out-west.mp3" ></audio>
+                </li>
+              </ul>
+            </div>
+            
+            <div style="flex: 1;">
+             
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+    
+        <div id="music-menu" class="music-menu">
+          <img id="music-image" src="" alt="Track Image">
+          <div id="music-info">
+            <p id="music-title"></p>
+            <p id="music-artist"></p>
+          </div>
+          <div id="music-controls">
+            <button id="previous-button" onclick="previousTrack()">&#9664;</button>
+            <button id="play-button" onclick="togglePlayback()">&#10074;&#10074</button>
+            <button id="next-button" onclick="nextTrack()">&#10074;</button>
+          </div>
+        </div>
+        
+    </main>
+    <footer>
+        <p>© 2023 Стрімінговий сервіс музики. Усі права захищені.</p>
+    </footer>
+    <script>
+        function togglePlaylist(playlistId) {
+            var playlist = document.getElementById(playlistId);
+            if (playlist.style.display === "none") {
+                playlist.style.display = "block";
+            } else {
+                playlist.style.display = "none";
+            }
+        }
+
+        function toggleAudio(button) {
+            var listItem = button.parentNode;
+            var audio = listItem.querySelector("audio");
+            var isActive = listItem.classList.contains("active");
+
+            if (isActive) {
+                audio.pause();
+                listItem.classList.remove("active");
+            } else {
+                audio.play();
+                listItem.classList.add("active");
+            }
+        }
+
+        var playButtons = document.querySelectorAll(".play-button");
+        var audioPlayer = document.querySelectorAll("audio");
+        var musicMenu = document.getElementById("music-menu");
+        var musicImage = document.getElementById("music-image");
+        var musicTitle = document.getElementById("music-title");
+        var musicArtist = document.getElementById("music-artist");
+        var currentTrackIndex = 0;
+
+        function playTrack(trackIndex) {
+          var trackItem = document.querySelectorAll(".playlist-item")[trackIndex];
+          var trackInfo = trackItem.querySelector(".track-info");
+          var trackImage = trackItem.querySelector("img");
+          var trackTitle = trackItem.querySelector("p");
+          var playlistId = trackItem.parentNode.id;
+
+          audioPlayer[currentTrackIndex].pause();
+          currentTrackIndex = trackIndex;
+          audioPlayer[currentTrackIndex].src = trackItem.querySelector("audio").src;
+          audioPlayer[currentTrackIndex].play();
+
+          musicImage.src = trackImage.src;
+          musicTitle.textContent = trackTitle.textContent;
+          musicArtist.textContent = ""; // Add artist information if available
+          musicMenu.classList.add("show");
+
+          // Update active playlist based on the data-playlist attribute
+          var playlists = {
+            playlist: "image",
+            playlist2: "image2",
+          };
+
+          var activePlaylist = playlists[playlistId];
+          if (activePlaylist) {
+            document.getElementById(activePlaylist).classList.add("active");
+          }
+        }
+
+
+        function pauseTrack() {
+          audioPlayer[currentTrackIndex].pause();
+        }
+
+        function togglePlayback() {
+          if (audioPlayer[currentTrackIndex].paused) {
+            playTrack(currentTrackIndex);
+          } else {
+            pauseTrack();
+          }
+        }
+
+        function nextTrack() {
+          var nextTrackIndex = (currentTrackIndex + 1) % playButtons.length;
+          playTrack(nextTrackIndex);
+        }
+
+        function previousTrack() {
+          var previousTrackIndex = (currentTrackIndex - 1 + playButtons.length) % playButtons.length;
+          playTrack(previousTrackIndex);
+        }
+
+        for (let i = 0; i < playButtons.length; i++) {
+          playButtons[i].addEventListener("click", function () {
+            var index = Array.from(playButtons).indexOf(this);
+            playTrack(index);
+          });
+        }
+    </script>
+</body>
+</html>

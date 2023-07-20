@@ -1,0 +1,758 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+h2{
+  text-align: center;
+  color: darkorange;
+  z-index: 2;
+  font-size: 85px;
+  font-family: 'Alegreya', serif;
+  background: linear-gradient(45deg, yellow, red); /* Установите желаемые цвета */
+  background-size: 200% 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: h2-animation 1s infinite;
+}
+@keyframes h2-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+h1{
+  text-align: center;
+  color: darkorange;
+  z-index: 2;
+  font-size: 85px;
+  font-family: 'Alegreya', serif;
+  background: linear-gradient(45deg, darkblue, lightsteelblue); /* Установите желаемые цвета */
+  background-size: 200% 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: h1-animation 1s infinite;
+
+}
+/* Заголовок */
+h3,h4,h5,h6 {
+  text-align: center;
+  color: darkorange;
+  z-index: 3;
+}
+@keyframes h1-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+body{
+  font-family: 'Oswald', sans-serif;
+}
+
+/* Навігація */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 60px;
+  background-color: darkorange;
+  font-weight: 400;
+}
+
+
+
+
+
+
+nav .logo a {
+  font-size: 26px;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  font-family: 'Pacifico', cursive;
+}
+nav .logo a:hover {
+  color: black;
+  transition: 1s;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+nav ul li a:hover {
+  color: black;
+  transition: 1s;
+}
+
+/* Секції */
+section {
+  margin-bottom: 30px;
+}
+.playlist-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+/* Секція "Пропозиції для вас for one of them " */
+.track-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  padding-left: 30px;
+}
+
+.track {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+}
+
+.track img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+}
+
+.track-info {
+  text-align: center;
+  margin-top: 10px;
+}
+.track-info p {
+  color: #777;
+}
+/* Підвал */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #00243a;
+  color: #007395;
+  z-index: 2;
+}
+.play-button,
+.pause-button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  background-color: #004563;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.volume-slider {
+  width: 100px;
+  margin-left: 10px;
+}
+/* контролери */
+.track-image {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.track-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.track-image:hover .overlay {
+  opacity: 1;
+}
+
+.play-button {
+  padding: 10px 20px;
+  background-color: #004563;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.track-details {
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+.track-details p {
+  color: black;
+}
+.track-list {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 20px 0;
+}
+
+.track-list::-webkit-scrollbar {
+  height: 6px;
+}
+
+.track-list::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.track-list::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.track {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.track-image {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.track-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.track-image:hover .overlay {
+  opacity: 1;
+}
+
+.play-button {
+  padding: 10px 20px;
+  background-color: #004563;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.track-details {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.track-details h3,
+.track-details p {
+  color: #fff;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.prev-button,
+.next-button {
+  width: 40px;
+  height: 40px;
+  background-color: blueviolet;
+}
+
+.video-bg{
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.video-bg video{
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: 1;
+
+}
+.video-bg__content{
+  z-index: 1;
+}
+.overlay
+
+.container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+.Track__1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 1s ease-in-out;
+  z-index: 5;
+}
+
+
+.track__2{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 1s ease-in-out;
+  z-index: 5;
+}
+
+
+
+
+
+
+
+
+
+
+
+.carousel-container {
+  width: 1400px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-images {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: transform 0.9s ease-in-out;
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Секції */
+section {
+  margin-bottom: 30px;
+}
+.playlist-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+/* Секція "Пропозиції для вас for one of them " */
+.track-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  padding-left: 30px;
+}
+
+.track {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+}
+
+.track img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+}
+
+.track-info {
+  text-align: center;
+  margin-top: 10px;
+}
+.track-info p {
+  color: #777;
+}
+/* Підвал */
+footer {
+
+  text-align: center;
+  padding: 10px;
+  background-color: lavenderblush;
+  color: black;
+  z-index: 3;
+  font-weight: 800;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container
+.play-button,
+.pause-button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  background-color: #004563;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.volume-slider {
+  width: 100px;
+  margin-left: 10px;
+}
+/* контролери */
+.track-image {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.track-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.track-image:hover .overlay {
+  opacity: 1;
+}
+
+.play-button {
+  padding: 10px 20px;
+  background-color: #004563;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.track-details {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.track-details h3,
+.track-details p {
+  color: #fff;
+}
+.track-list {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 20px 0;
+}
+
+.track-list::-webkit-scrollbar {
+  height: 6px;
+}
+
+.track-list::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.track-list::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.track {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.track-image {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.track-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 3;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.track-image:hover .overlay {
+  opacity: 1;
+}
+
+.play-button {
+  padding: 10px 20px;
+  background-color: #004563;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.track-details {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.track-details h3,
+.track-details p {
+  color: #fff;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.prev-button,
+.next-button {
+  width: 40px;
+  height: 40px;
+  background-color: blueviolet;}
+.music-menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  visibility: hidden;
+  transition: visibility 0.3s;
+}
+
+.music-menu.show {
+  visibility: visible;
+}
+
+#music-image {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  z-index: 5;
+}
+
+#music-info {
+  flex: 1;
+}
+
+#music-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+#music-artist {
+  font-size: 14px;
+  margin: 0;
+}
+
+#music-controls button {
+  margin-right: 10px;
+}
+/* Стилізація кнопок */
+.play-button {
+  background-color: #ff4a4a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+/* Стилізація зображень треків */
+.track-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  z-index: 3;
+}
+
+/* Стилізація заголовків і виконавців треків */
+.track-details h3,
+.track-details p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  z-index: 3;
+}
+
+/* Стилізація контейнера менюшки */
+.music-menu {
+  background-color: black;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 4px;
+  z-index: 3;
+}
+
+/* Стилізація зображення треку */
+#music-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+/* Стилізація інформації про трек */
+#music-info {
+  flex-grow: 1;
+  z-index: 3;
+}
+
+#music-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  z-index: 3;
+}
+
+#music-artist {
+  font-size: 16px;
+  color: #888;
+  z-index: 3;
+}
+
+/* Стилізація кнопок управління */
+#music-controls button {
+  background-color: #00243a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 3;
+}
+.container3 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+}
+
+
+
+.button3 {
+  margin: 70px;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  background-color: bisque;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.button3:hover {
+  background-color: darkorange;
+}
+.button3:active {
+  background-color: darkorange;
+}
+.button3:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+

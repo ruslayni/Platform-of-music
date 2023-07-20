@@ -1,0 +1,11 @@
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 300px; /* Установите желаемую высоту контейнера */
+}
+
+.item {
+    scroll-snap-align: start; /* Измените на end, если хотите другую скорость */
+    /* Добавьте другие стили для элементов */
+}
