@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Альбоми</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/borovstyle.css">
+
+</head>
+<body>
+<nav>
+    <div class="logo">
+        <a href="index.html">Musix</a>
+    </div>
+    <ul>
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="playlists.html">Плейлисти</a></li>
+        <li><a href="Albums.html">Альбоми</a></li>
+        <li><a href="singers.html">Виконавці</a></li>
+    </ul>
+</nav>
+<div class="container">
+    <div class="album">
+        <img src="images/lil-uzi-vert-pink-tape.jpg" alt="Альбом 1">
+        <div class="album-content">
+            <h2>Pink Tape</h2>
+            <ul>
+                <li>
+                    <a href="#" class="play-button" id="play-button-audio1" data-album-title="Pink Tape" data-artist-name="Lil Uzi Vert" data-track-image="images/lil-uzi-vert-pink-tape.jpg" data-track-title="Flooded The Face" onclick="playSong('audio1', 'Pink Tape', 'Lil Uzi Vert', 'images/lil-uzi-vert-pink-tape.jpg', 'Flooded The Face');">
+                        Lil Uzi Vert - Flooded The Face
+                    </a>
+                    <audio id="audio1" class="audio-player" src="albums/Pink Tape Album/01-Lil-Uzi-Vert-Flooded-The-Face-(HiphopMood.com).mp3" data-track-number="1" data-track-name="Lil Uzi Vert - Flooded The Face"></audio>
+                </li>
+                <li>
+                    <a href="#" class="play-button" id="play-button-audio2" onclick="playSong('audio2', 'Suicide Doors', 'Lil Uzi Vert', 'images/lil-uzi-vert-pink-tape.jpg', 'Suicide Doors');">
+                        Lil Uzi Vert - Suicide Doors
+                    </a>
+                    <audio id="audio2" class="audio-player" src="albums/Pink Tape Album/02-Lil-Uzi-Vert-Suicide-Doors-(HiphopMood.com).mp3" data-track-number="2" data-track-name="Lil Uzi Vert - Suicide Doors"></audio>
+                </li>
+                <li>
+                    <a href="#" class="play-button" id="play-button-audio3" onclick="playSong('audio3', 'Aye', 'Lil Uzi Vert', 'images/lil-uzi-vert-pink-tape.jpg', 'Aye');">
+                        Lil Uzi Vert - Aye ft Travis Scott
+                    </a>
+                    <audio id="audio3" class="audio-player" src="albums/Pink Tape Album/03-Lil-Uzi-Vert-Aye-ft-Travis-Scott-(HiphopMood.com).mp3" data-track-number="3" data-track-name="Lil Uzi Vert - Aye ft. Travis Scott"></audio>
+                </li>
+                <li>
+                    <a href="#" class="play-button" id="play-button-audio4" onclick="playSong('audio4', 'Crush Em', 'Lil Uzi Vert', 'images/lil-uzi-vert-pink-tape.jpg', 'Crush Em');">
+                        Lil Uzi Vert - Crush Em
+                    </a>
+                    <audio id="audio4" class="audio-player" src="albums/Pink Tape Album/04-Lil-Uzi-Vert-Crush-Em-(HiphopMood.com).mp3" data-track-number="4" data-track-name="Lil Uzi Vert - Crush Em"></audio>
+                </li>
+                <li>
+                    <a href="#" class="play-button" id="play-button-audio5" onclick="playSong('audio5', 'Amped', 'Lil Uzi Vert', 'images/lil-uzi-vert-pink-tape.jpg', 'Amped');">
+                        Lil Uzi Vert - Amped
+                    </a>
+                    <audio id="audio5" class="audio-player" src="albums/Pink Tape Album/05-Lil-Uzi-Vert-Amped-(HiphopMood.com).mp3" data-track-number="5" data-track-name="Lil Uzi Vert - Amped"></audio>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="album">
+        <img src="images/1200px-Die_Lit_by_Playboi_Carti.jpg" alt="Альбом 2">
+        <div class="album-content">
+            <h2>Die Lit</h2>
+            <ul>
+                <li>
+                    <a href="#" class="play-button" id="play-button-audio6" onclick="playSong('audio6', 'Die Lit', 'Playboi Carti', 'images/1200px-Die_Lit_by_Playboi_Carti.jpg', 'FlatBed Freestyle');">
+                        Playboi Carti - FlatBed Freestyle
+                    </a>
+                    <audio id="audio6" class="audio-player" src="albums/Playboi Carti Album/Playboi Carti - FlatBed Freestyle.mp3" data-track-number="1" data-track-name="Playboi Carti - FlatBed Freestyle"></audio>
+                </li>
+                <li>
+                    <a href="#" class="play-button" id="play-button-audio7" onclick="playSong('audio7', 'Die Lit', 'Playboi Carti', 'images/1200px-Die_Lit_by_Playboi_Carti.jpg','Foreign');">
+                        Playboi Carti - Foreign
+                    </a>
+                    <audio id="audio7" class="audio-player" src="albums/Playboi Carti Album/Playboi Carti - Foreign.mp3" data-track-number="2" data-track-name="Playboi Carti - Foreign"></audio>
+                </li>
+                <li>
+                    <a href="#" class="play-button" id="play-button-audio8" onclick="playSong('audio8', 'Die Lit', 'Playboi Carti', 'images/1200px-Die_Lit_by_Playboi_Carti.jpg', 'Long Time');">
+                        Playboi Carti - Long Time
+                    </a>
+                    <audio id="audio8" class="audio-player" src="albums/Playboi Carti Album/Playboi Carti - Long Time.mp3" data-track-number="3" data-track-name="Playboi Carti - Long Time"></audio>
+                </li>
+                <li>
+                    <a href="#" class="play-button" id="play-button-audio9" onclick="playSong('audio9', 'Die Lit', 'Playboi Carti', 'images/1200px-Die_Lit_by_Playboi_Carti.jpg','Old Money');">
+                        Playboi Carti - Old Money
+                    </a>
+                    <audio id="audio9" class="audio-player" src="albums/Playboi Carti Album/Playboi Carti - Old Money.mp3" data-track-number="4" data-track-name="Playboi Carti - Old Money"></audio>
+                </li>
+                <li>
+                    <a href="#" class="play-button" id="play-button-audio10" onclick="playSong('audio10', 'Die Lit', 'Playboi Carti', 'images/1200px-Die_Lit_by_Playboi_Carti.jpg','Pull Up');">
+                        Playboi Carti - Pull Up
+                    </a>
+                    <audio id="audio10" class="audio-player" src="albums/Playboi Carti Album/Playboi Carti - Pull Up.mp3" data-track-number="5" data-track-name="Playboi Carti - Pull Up"></audio>
+                </li>
+                <li>
+                    <a href="#" class="play-button" id="play-button-audio11" onclick="playSong('audio11', 'Die Lit', 'Playboi Carti', 'images/1200px-Die_Lit_by_Playboi_Carti.jpg','R.I.P.');">
+                        Playboi Carti - R.I.P.
+                    </a>
+                    <audio id="audio11" class="audio-player" src="albums/Playboi Carti Album/Playboi Carti - R.I.P..mp3" data-track-number="1" data-track-name="Playboi Carti - FlatBed Freestyle"></audio>
+                </li>
+                <!-- Додайте більше пісень, якщо потрібно -->
+            </ul>
+        </div>
+    </div>
+
+    <div class="album">
+        <img src="images/jay-z-kanye-west-adele-brooklyn.-chicago.-london.jpg" alt="Альбом 3">
+        <div class="album-content">
+            <h2>Brooklyn. Chicago. London. (The Urban Noize Remixes)</h2>
+            <ul>
+                <li>
+                    <a href="#" class="play-button" id="play-button-audio12" onclick="playSong('audio12','Brooklyn. Chicago. London. (The Urban Noize Remixes)', 'Jay-Z', 'images/jay-z-kanye-west-adele-brooklyn.-chicago.-london.jpg','Adele & Jay-Z - Cold Shoulder (Urban Noize Remix)');">
+                        Adele & Jay-Z - Cold Shoulder (Urban Noize Remix)
+                    </a>
+                    <audio id="audio12" class="audio-player" src="albums/Jay-Z Album/Adele _ Jay-Z - Cold Shoulder (Urban Noize Remix).mp3" data-track-number="1" data-track-name="Adele & Jay-Z - Cold Shoulder (Urban Noize Remix)"></audio>
+                </li>
+                <li>
+                    <a href="#" class="play-button" id="play-button-audio13" onclick="playSong('audio13','Brooklyn. Chicago. London. (The Urban Noize Remixes)', 'Jay-Z', 'images/jay-z-kanye-west-adele-brooklyn.-chicago.-london.jpg','Adele & Kanye West - Melt My Heart To Stone (Urban Noize Remix) (Dj Voodoo Extend)');">
+                        Adele & Kanye West - Melt My Heart To Stone (Urban Noize Remix) (Dj Voodoo Extend)
+                    </a>
+                    <audio id="audio13" class="audio-player" src="albums/Jay-Z Album/Adele _ Kanye West - Melt My Heart To Stone (Urban Noize Remix) (Dj Voodoo Extend).mp3" data-track-number="2" data-track-name="Adele & Kanye West - Melt My Heart To Stone (Urban Noize Remix) (Dj Voodoo Extend)"></audio>
+                </li>
+                <li>
+                    <a href="#" class="play-button" id="play-button-audio14" onclick="playSong('audio14','Brooklyn. Chicago. London. (The Urban Noize Remixes)', 'Jay-Z', 'images/jay-z-kanye-west-adele-brooklyn.-chicago.-london.jpg','Adele & Kanye West - One & Only (Urban Noize Remix)');">
+                        Adele & Kanye West - One & Only (Urban Noize Remix)
+                    </a>
+                    <audio id="audio14" class="audio-player" src="albums/Jay-Z Album/Adele _ Kanye West - One _ Only (Urban Noize Remix).mp3" data-track-number="3" data-track-name="Adele & Kanye West - One & Only (Urban Noize Remix)"></audio>
+                </li>
+                <li>
+                    <a href="#" class="play-button" id="play-button-audio15" onclick="playSong('audio15','Brooklyn. Chicago. London. (The Urban Noize Remixes)', 'Jay-Z', 'images/jay-z-kanye-west-adele-brooklyn.-chicago.-london.jpg','Jay-Z & Adele - Dear Summer (Make You Feel My Love) (Urban Noize Remix)');">
+                        Jay-Z & Adele - Dear Summer (Make You Feel My Love) (Urban Noize Remix)
+                    </a>
+                    <audio id="audio15" class="audio-player" src="albums/Jay-Z Album/Jay-Z _ Adele - Dear Summer (Make You Feel My Love) (Urban Noize Remix).mp3" data-track-number="4" data-track-name="Jay-Z & Adele - Dear Summer (Make You Feel My Love) (Urban Noize Remix)"></audio>
+                </li>
+                <li>
+                    <a href="#" class="play-button" id="play-button-audio16" onclick="playSong('audio16','Brooklyn. Chicago. London. (The Urban Noize Remixes)', 'Jay-Z', 'images/jay-z-kanye-west-adele-brooklyn.-chicago.-london.jpg','Jay-Z & Adele - Won\'t Go (Wishing) (Urban Noize Remix)');">
+                        Jay-Z & Adele - Won't Go (Wishing) (Urban Noize Remix)
+                    </a>
+                    <audio id="audio16" class="audio-player" src="albums/Jay-Z Album/Jay-Z _ Adele - Won_t Go (Wishing) (Urban Noize Remix).mp3" data-track-number="5" data-track-name="Jay-Z & Adele - Won't Go (Wishing) (Urban Noize Remix)"></audio>
+                </li>
+                <!-- Додайте більше пісень, якщо потрібно -->
+            </ul>
+        </div>
+    </div>
+
+    <div class="album">
+        <img src="images/Scarlxrd_—_DXXM.jpg" alt="Альбом 4">
+        <div class="album-content">
+            <h2>DXXM</h2>
+            <ul>
+                <li>
+                    <a href="#" class="play-button" id="play-button-audio17" onclick="playSong('audio17','DXXM', 'scarlxrd', 'images/Scarlxrd_—_DXXM.jpg','a BRAINDEAD civilisatixn');">
+                        scarlxrd - a BRAINDEAD civilisatixn
+                    </a>
+                    <audio id="audio17" class="audio-player" src="albums/DXXM/scarlxrd - a BRAINDEAD civilisatixn.mp3" data-track-number="1" data-track-name="scarlxrd - a BRAINDEAD civilisatixn"></audio>
+                </li>
+                <li>
+                    <a href="#" class="play-button" id="play-button-audio18" onclick="playSong('audio18','DXXM', 'scarlxrd', 'images/Scarlxrd_—_DXXM.jpg','angels sleep at FXUR_AM');">
+                        scarlxrd - angels sleep at FXUR_AM
+                    </a>
+                    <audio id="audio18" class="audio-player" src="albums/DXXM/scarlxrd - angels sleep at FXUR_AM.mp3" data-track-number="1" data-track-name="scarlxrd - angels sleep at FXUR_AM"></audio>
+                </li>
+                <li>
+                    <a href="#" class="play-button" id="play-button-audio19" onclick="playSong('audio19','DXXM', 'scarlxrd', 'images/Scarlxrd_—_DXXM.jpg','BURNS');">
+                        scarlxrd - BURNS
+                    </a>
+                    <audio id="audio19" class="audio-player" src="albums/DXXM/scarlxrd - BURNS.mp3" data-track-number="1" data-track-name="scarlxrd - BURNS"></audio>
+                </li>
+                <li>
+                    <a href="#" class="play-button" id="play-button-audio20" onclick="playSong('audio20','DXXM', 'scarlxrd', 'images/Scarlxrd_—_DXXM.jpg','BXILING PXINT');">
+                        scarlxrd - BXILING PXINT
+                    </a>
+                    <audio id="audio20" class="audio-player" src="albums/DXXM/scarlxrd - BXILING PXINT.mp3" data-track-number="1" data-track-name="scarlxrd - BXILING PXINT"></audio>
+                </li>
+                <li>
+                    <a href="#" class="play-button" id="play-button-audio21" onclick="playSong('audio21','DXXM', 'scarlxrd', 'images/Scarlxrd_—_DXXM.jpg','CHXKE');">
+                        scarlxrd - CHXKE
+                    </a>
+                    <audio id="audio21" class="audio-player" src="albums/DXXM/scarlxrd - CHXKE.mp3" data-track-number="1" data-track-name="scarlxrd - CHXKE"></audio>
+                </li>
+            </ul>
+            </div>
+    <!-- Додайте більше альбомів, якщо потрібно -->
+</div>
+
+<div id="music-menu">
+    <img id="music-image" src="" alt="Music Image">
+    <div id="music-info">
+        <p id="music-title"></p>
+        <p id="music-artist"></p>
+    </div>
+    <div id="music-controls">
+        <div class="audio-track">
+            <div class="time">
+            </div>
+        </div>
+        <button id="play-pause-button">&#10074;&#10074;</button> <!-- Play (▶||) -->
+    </div>
+</div>
+</div>
+<script src="javascrpt.js"></script>
+<footer>
+    <p>© 2023 Стрімінговий сервіс музики. Усі права захищені.</p>
+</footer>
+</body>
+
+</html>
